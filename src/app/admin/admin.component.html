@@ -1,0 +1,48 @@
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<body>
+<div class="container">
+    <h4>Welcome Admin</h4>
+    
+    <div>
+    <form #userForm (ngSubmit)="submit(userForm)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">CookTime:</label>
+        <input type="text" name="cooktime" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">Price:</label>
+        <input type="text" name="price" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">Favorite:</label>
+        <input type="text" name="favorite" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">Origins:</label>
+        <input type="text" name="origins" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">Star:</label>
+        <input type="text" name="star" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">imageUrl:</label>
+        <input type="text" name="imageurl" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">Tags:</label>
+        <input type="text" name="tags" class="form-control" ngModel>
+      </div>
+      <hr>
+      <button class="button" type="submit" (click)="submit(userForm)">Add</button>
+      <button class="button" type="reset">Edit</button>
+  
+    </form>
+  </div>
+  
+  </div>
+</body>
